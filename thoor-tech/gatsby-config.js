@@ -3,7 +3,7 @@ module.exports = {
     title: `Thoor.tech`,
     author: {
       name: `Pierre Thoor`,
-      summary: `who lives in Sweden and works as an Product Manager for Microsoft Cloud Solutions`,
+      summary: `who lives in Sweden and works as an Product Manager for Microsoft Cloud Solutions.`,
     },
     description: `A blog about Microsoft tech`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
