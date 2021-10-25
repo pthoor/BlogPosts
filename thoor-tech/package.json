@@ -1,14 +1,15 @@
 {
-	"name": "divyanshu013-blog",
+	"name": "thoor-tech",
 	"private": true,
-	"description": "Personal blog of Divyanshu Maithani",
+	"description": "Personal blog of Pierre Thoor",
 	"version": "1.0.0",
 	"author": {
-		"email": "div.blackcat@gmail.com",
-		"name": "Divyanshu Maithani",
-		"url": "https://github.com/divyanshu013"
+		"email": "pierre@thoor.tech",
+		"name": "Pierre Thoor",
+		"url": "https://github.com/pthoor"
 	},
 	"dependencies": {
+		"@babel/core": "^7.15.8",
 		"@divyanshu013/inspirational-quotes": "^1.0.6",
 		"@divyanshu013/media": "^1.0.0",
 		"@emotion/react": "^11.5.0",
@@ -42,14 +43,17 @@
 		"gatsby-source-filesystem": "^3.0.0",
 		"gatsby-transformer-remark": "^3.2.0",
 		"gatsby-transformer-sharp": "^3.0.0",
+		"graphql": "^15.6.1",
 		"prismjs": "^1.23.0",
 		"prop-types": "^15.7.2",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
 		"react-helmet": "^6.1.0",
 		"react-icons": "^4.3.1",
+		"react-is": "^17.0.2",
 		"react-typography": "^0.16.20",
 		"styled-components": "^5.3.3",
+		"typescript": "^4.4.4",
 		"typography": "^0.16.21"
 	},
 	"devDependencies": {
