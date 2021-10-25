@@ -11,6 +11,7 @@ thumbnail: ./OneDrive_logo.png
 category: []
 tag: []
 post_format: []
+ogImage: ./og-image.png
 ---
 Recently I moved from OneDrive to OneDrive for Business (which is not automated task by the way…) and was hoping to have more control over my data and also email because I also migrated from Gmail to Exchange Online (that works great by the way).
 

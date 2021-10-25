@@ -1,131 +1,100 @@
 module.exports = {
-  siteMetadata: {
-    title: `Thoor.tech`,
-    author: {
-      name: `Pierre Thoor`,
-      summary: `who lives in Sweden and works as an Product Manager for Microsoft Cloud Solutions.`,
-    },
-    description: `A blog about Microsoft tech`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `PierreThoor`,
-    },
-  },
-  plugins: [
-    `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 630,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
-                return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
-                  date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
-                })
-              })
-            },
-            query: `
-              {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  nodes {
-                    excerpt
-                    html
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                      date
-                    }
-                  }
-                }
-              }
-            `,
-            output: "/rss.xml",
-          },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    `gatsby-plugin-react-helmet`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
-}
+	siteMetadata: {
+		bio: 'Up in the cloud...',
+		title: `Thoor.tech`,
+		author: `Pierre Thoor`,
+		description: `Personal blog of Pierre Toor`,
+		domain: 'thoor.tech',
+		siteUrl: `https://thoor.tech`,
+		repo: 'pthoor/blog',
+		social: {
+			twitter: `https://twitter.com/PierreThoor`,
+			github: 'https://github.com/pthoor',
+			email: 'mailto:pierre@thoor.tech',
+		},
+	},
+	plugins: [
+		`gatsby-plugin-emotion`,
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/blog`,
+				name: `blog`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/pages`,
+				name: `pages`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/assets`,
+				name: `assets`,
+			},
+		},
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				plugins: [
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 590,
+						},
+					},
+					{
+						resolve: `gatsby-remark-responsive-iframe`,
+						options: {
+							wrapperStyle: `margin-bottom: 1.0725rem`,
+						},
+					},
+					`gatsby-remark-prismjs`,
+					`gatsby-remark-copy-linked-files`,
+					`gatsby-remark-smartypants`,
+					`gatsby-remark-external-links`,
+				],
+			},
+		},
+		`gatsby-plugin-image`,
+		`gatsby-transformer-sharp`,
+		`gatsby-plugin-sharp`,
+		`gatsby-plugin-feed`,
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `Thoor Tech`,
+				short_name: `Thoor`,
+				start_url: `/`,
+				background_color: `#121212`,
+				theme_color: `#1d1d1d`,
+				display: `minimal-ui`,
+				icon: `static/favicon.png`,
+			},
+		},
+		`gatsby-plugin-offline`,
+		`gatsby-plugin-react-helmet`,
+		{
+			resolve: `gatsby-plugin-typography`,
+			options: {
+				pathToConfigModule: `src/utils/typography`,
+			},
+		},
+		{
+			resolve: `gatsby-plugin-nprogress`,
+			options: {
+				color: `salmon`,
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+			options: {
+				devMode: false,
+			},
+		},
+		'gatsby-plugin-catch-links',
+	],
+};
