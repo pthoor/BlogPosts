@@ -31,7 +31,7 @@ You can download the script from my GitHub repo:
 <https://github.com/pthoor/PowerShell/blob/master/OneDrive/Request-OneDriveSite.ps1>
 
  ```powershell
-data-url="https://raw.githubusercontent.com/pthoor/PowerShell/master/OneDrive/Request-OneDriveSite.ps1" title="Request-OneDriveSite.ps1">
+"https://raw.githubusercontent.com/pthoor/PowerShell/master/OneDrive/Request-OneDriveSite.ps1"
 ```
 
-![](./Request-OneDriveSite.png)
+![](./request-onedrivesite.png)

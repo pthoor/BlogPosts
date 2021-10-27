@@ -4,8 +4,9 @@ title: 'About'
 
 # Hello world
 
-> Welcome to my home on the internet!
+> Welcome to my home on the Internet!
 
-I'm a software engineer professionally, working mostly on frontend, though I'm also fairly comfortable working fullstack. I enjoy working in the JavaScript ecosystem especially React, React Native, NodeJS, GraphQL and TypeScript.
+I'm a Global Product Manager for Microsoft Cloud Solutions, living in Sweden, and are in the intersection between business and technology. 
 
-I'll probably come back to fill up this space soon!
+View my verified achievements at [Credly](https://www.credly.com/users/pierre-thoor/badges?sort=-state_updated_at&page=1)
+![Credly](./Credly.png)
