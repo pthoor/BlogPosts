@@ -11,7 +11,7 @@ thumbnail: ../../../uploads/2018/11/Teams_SearchBar.png
 category: []
 tag: []
 post_format: []
-ogImage: ./og-image.png
+ogImage: ./og-image.jpg
 ---
 You may noticed the Search bar in Microsoft Teams, but have you used it yet? No? Here’s one quick tip!
 

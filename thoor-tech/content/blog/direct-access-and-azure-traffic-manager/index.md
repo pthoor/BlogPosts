@@ -11,7 +11,7 @@ thumbnail: ../../../uploads/2018/09/Azure-Traffic-Manager_COLOR.png
 category: []
 tag: []
 post_format: []
-ogImage: ./og-image.png
+ogImage: ./og-image.jpg
 ---
 I want to reach out and give Richard Hicks a big thank you for helping me with this issue and opening my eyes, thank you Rich! Don’t forget to visit his blog <https://directaccess.richardhicks.com> and hey, buy his book!
 

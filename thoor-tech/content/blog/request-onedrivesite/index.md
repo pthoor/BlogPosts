@@ -11,7 +11,7 @@ thumbnail: ../../../uploads/2019/05/Request-OneDriveSite.png
 category: []
 tag: []
 post_format: []
-ogImage: ./og-image.png
+ogImage: ./og-image.jpg
 ---
 To automate things, that’s why Snover did create PowerShell for, we sometimes need to pre-provision users OneDrive storage. New users will not have the storage ready when we licensed the user – instead the storage are provisioned when the user starts OneDrive – or, when we, admins, run this script.
 
