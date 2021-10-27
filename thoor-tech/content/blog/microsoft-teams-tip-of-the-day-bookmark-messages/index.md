@@ -11,6 +11,7 @@ thumbnail: ../../../uploads/2018/11/Teams_Bookmark_4.png
 category: []
 tag: []
 post_format: []
+ogImage: ./og-image.png
 ---
 In Teams we can save (or bookmark) chat conversations, mentions, and other type of notifications so we can respond to them in a more convenient time.
 
