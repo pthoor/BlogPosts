@@ -12,7 +12,9 @@ module.exports = {
 			github: 'https://github.com/pthoor',
 			email: 'mailto:pierre@thoor.tech',
       		linkedin: `https://wwww.linkedin.com/in/PierreThoor`,
-      		info: './about'
+      		info: './about',
+			podcast: 'https://podcasts.apple.com/se/podcast/azure-ms-365-pt-session-podcast/id1527849931',
+			spotify: 'https://open.spotify.com/show/5E3fARGuhtcC3RYbarXalT'
 		},
 	},
 	plugins: [

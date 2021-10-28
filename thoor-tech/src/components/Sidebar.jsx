@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { FiTwitter, FiGithub, FiMail, FiTerminal } from 'react-icons/fi';
 //import { FaStackOverflow, FaGoodreadsG } from 'react-icons/fa';
-import { FaLinkedinIn, FaInfoCircle } from 'react-icons/fa';
+import { FaLinkedinIn, FaInfoCircle, FaPodcast, FaSpotify } from 'react-icons/fa';
 import { mediaMax } from '@divyanshu013/media';
 import { keyframes } from '@emotion/react';
 
@@ -30,6 +30,8 @@ const SIDEBAR_QUERY = graphql`
 					email
 					linkedin
 					info
+					podcast
+					spotify
 				}
 			}
 		}
@@ -172,6 +174,28 @@ const Sidebar = () => {
 					rel="noopener noreferrer"
 				>
 					<FaInfoCircle />
+				</Button>
+				<Button
+					title="Apple Podcast"
+					aria-label="Apple Podcast"
+					as="a"
+					circular
+					href={social.podcast}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<FaPodcast />
+				</Button>
+				<Button
+					title="Spotify"
+					aria-label="Spotify"
+					as="a"
+					circular
+					href={social.spotify}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<FaSpotify />
 				</Button>
 			</div>
 		</nav>
