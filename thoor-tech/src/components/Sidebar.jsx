@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { FiTwitter, FiGithub, FiMail } from 'react-icons/fi';
+import { FiTwitter, FiGithub, FiMail, FiTerminal } from 'react-icons/fi';
 //import { FaStackOverflow, FaGoodreadsG } from 'react-icons/fa';
+import { FaLinkedinIn, FaInfoCircle } from 'react-icons/fa';
 import { mediaMax } from '@divyanshu013/media';
+import { keyframes } from '@emotion/react';
 
 import Button from './Button';
 import { rhythm } from '../utils/typography';
@@ -21,10 +23,13 @@ const SIDEBAR_QUERY = graphql`
 			siteMetadata {
 				author
 				bio
+				title
 				social {
 					twitter
 					github
 					email
+					linkedin
+					info
 				}
 			}
 		}
@@ -35,9 +40,27 @@ const Sidebar = () => {
 	const data = useStaticQuery(SIDEBAR_QUERY);
 	const { avatar } = data;
 	const { author, bio, social } = data.site.siteMetadata;
+	const siteTitle = data.site.siteMetadata.title;
 	const { theme } = useContext(ThemeContext);
 	const { muted } = getTheme(theme);
+	const { color, background, secondary } = getTheme(theme);
 	const borderStartingColor = theme === 'light' ? 'hsla(0, 0%, 0%, 0.1)' : 'hsla(0, 0%, 100%, 0.1)';
+	const terminalAnimation = keyframes({
+		from: {
+			stroke: color,
+		},
+		to: {
+			stroke: background,
+		},
+	});
+
+	const terminalStyles = {
+		marginRight: 8,
+		line: {
+			animation: `${terminalAnimation} 0.5s ease-in-out infinite`,
+			animationDirection: 'alternate',
+		},
+	};
 	return (
 		<nav
 			css={{
@@ -81,6 +104,7 @@ const Sidebar = () => {
 					}}
 				/>
 				<h3>{author}</h3>
+				<h3><FiTerminal css={terminalStyles} /> </h3>
 			</div>
 			<p className="muted" css={{ color: muted }}>
 				{bio}
@@ -88,7 +112,7 @@ const Sidebar = () => {
 			<div
 				css={{
 					display: 'grid',
-					gridGap: 16,
+					gridGap: 10,
 					gridTemplateColumns: 'repeat(4, auto)',
 					justifyItems: 'center',
 					justifyContent: 'start',
@@ -126,6 +150,28 @@ const Sidebar = () => {
 					rel="noopener noreferrer"
 				>
 					<FiMail />
+				</Button>
+				<Button
+					title="LinkedIn"
+					aria-label="Link to my LinkedIn"
+					as="a"
+					circular
+					href={social.linkedin}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<FaLinkedinIn />
+				</Button>
+				<Button
+					title="Info"
+					aria-label="About me"
+					as="a"
+					circular
+					href={social.info}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<FaInfoCircle />
 				</Button>
 			</div>
 		</nav>

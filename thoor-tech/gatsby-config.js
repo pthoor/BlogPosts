@@ -1,9 +1,9 @@
 module.exports = {
 	siteMetadata: {
-		bio: 'Up in the cloud...',
+		bio: 'Blogging and talking MS Cloud',
 		title: `Thoor.tech`,
 		author: `Pierre Thoor`,
-		description: `Personal blog of Pierre Toor`,
+		description: `Personal blog of Pierre Thoor`,
 		domain: 'thoor.tech',
 		siteUrl: `https://thoor.tech`,
 		repo: 'pthoor/blog',
@@ -11,6 +11,8 @@ module.exports = {
 			twitter: `https://twitter.com/PierreThoor`,
 			github: 'https://github.com/pthoor',
 			email: 'mailto:pierre@thoor.tech',
+      linkedin: `https://wwww.linkedin.com/in/PierreThoor`,
+      info: './about'
 		},
 	},
 	plugins: [

@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft Teams: Tip of the day &#8211; Bookmark messages'
+title: 'Microsoft Teams: Tip of the day - Bookmark messages'
 date: '2018-11-26T19:30:45+01:00'
 status: publish
 permalink: /2018/11/microsoft-teams-tip-of-the-day-bookmark-messages

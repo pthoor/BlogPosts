@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft Teams: Tip of the day &#8211; Do Not Disturb'
+title: 'Microsoft Teams: Tip of the day - Do Not Disturb'
 date: '2018-11-20T21:41:44+01:00'
 status: publish
 permalink: /2018/11/microsoft-teams-tip-of-the-day-do-not-disturb

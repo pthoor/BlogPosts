@@ -12,6 +12,7 @@ import { rhythm } from '../utils/typography';
 
 const BlogIndex = ({ data, location }) => {
 	const posts = data.allMarkdownRemark.edges;
+	const siteTitle = data.site.siteMetadata.title;
 
 	return (
 		<ThemeProvider>
@@ -31,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
 				}}
 			>
 				<Sidebar />
-				<Layout location={location}>
+				<Layout location={location} title={siteTitle}>
 					<Seo />
 					{posts.map(({ node }) => {
 						const title = node.frontmatter.title || node.fields.slug;
@@ -70,6 +71,11 @@ BlogIndex.propTypes = {
 
 export const pageQuery = graphql`
 	query {
+		site {
+			siteMetadata {
+				title
+			}
+		}
 		allMarkdownRemark(
 			filter: { frontmatter: { title: { ne: "About" } } }
 			sort: { fields: [frontmatter___date], order: DESC }
