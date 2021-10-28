@@ -36,7 +36,7 @@ Start with adding Traffic Manager profile in your Azure tenant – In Marketplac
 Routing method – for this purpose (Direct Access) chose Geographic.  
 Resource Group – create new or use existing
 
-![](./TrafficManager_1.png)
+![](./trafficmanager_1.png)
 
 When the profile is created, go in to Traffic Manager resource and then Configuration.
 
@@ -47,7 +47,7 @@ Port – 443
 Path – leave default  
 Other settings – edit to fit your needs. Default will work just fine.
 
-![](./TrafficManager_3.png)
+![](./trafficmanager_3.png)
 
 Then we need to add some endpoint (our entry points in Direct Access).
 
@@ -57,16 +57,16 @@ FQDN or IP: To your DA entry point
 Geo-mapping: For US, select that region. Note that it’s recommended that one (1) endpoint have the All (World) location assigned to it. How does the client know which endpoint it should connect to? *…lookup starts at the lowest granularity level (State/Province where it is supported, else at the Country/Region level) and goes all the way up to the highest level, which is World. The first match found using this traversal is designated as the endpoint to return in the query response.  
 For example, consider a Geographic Routing type profile with two endpoints – Endpoint1 and Endpoint2. Endpoint1 is configured to receive traffic from Ireland and Endpoint2 is configured to receive traffic from Europe. If a request originates from Ireland, it is always routed to Endpoint1.* Read more at Microsoft Docs: [https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-routing-methods#a-name–geographicageographic-traffic-routing-method](https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-routing-methods#a-name--geographicageographic-traffic-routing-method)
 
-![](./TrafficManager_4.png)
+![](./trafficmanager_4.png)
 
 Your endpoint should then be Online.
 
-![](./ATM.png)
+![](./atm.png)
 
 When you have configured it all in Azure, its time to enable GSLB in Direct Access.  
 Configure your Multisite deployment and type in your Traffic Manager DNS endpoint in GSLB settings. Then click Next to update the deployment and push out the new GPO.
 
-![](./TrafficManager_2.png)
+![](./trafficmanager_2.png)
 
 It’s likley that you will need to run some PowerShell cmdlets after the GPO have been updated. If you get this warning, just follow its instructions.
 
@@ -74,8 +74,8 @@ It’s likley that you will need to run some PowerShell cmdlets after the GPO ha
 Set-DAEntryPoint -Name "Name of the entry point" -GslbIP "External IP address of the DNS name"
 ```
 
-![](./DA_Multisite_GSLB.png)
+![](./da_multisite_gslb.png)
 
 I also recommend to enable **Traffic View** to see more detailed view how the clients connect and some other cool stuff!
 
-![](./TrafficManager_TrafficView.png)
+![](./trafficmanager_trafficview.png)
