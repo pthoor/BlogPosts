@@ -12,6 +12,7 @@ category: []
 tag: []
 post_format: []
 ogImage: ./og-image.jpg
+description: "To automate things, that’s why Snover did create PowerShell for, we sometimes need to pre-provision users OneDrive storage..."
 ---
 To automate things, that’s why Snover did create PowerShell for, we sometimes need to pre-provision users OneDrive storage. New users will not have the storage ready when we licensed the user – instead the storage are provisioned when the user starts OneDrive – or, when we, admins, run this script.
 

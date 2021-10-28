@@ -12,6 +12,7 @@ category: []
 tag: []
 post_format: []
 ogImage: ./og-image.jpg
+description: "In Teams we can save (or bookmark) chat conversations, mentions, and other type of notifications so we can respond..."
 ---
 In Teams we can save (or bookmark) chat conversations, mentions, and other type of notifications so we can respond to them in a more convenient time.
 

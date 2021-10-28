@@ -12,6 +12,7 @@ category: []
 tag: []
 post_format: []
 ogImage: ./og-image.jpg
+description: "Really cool feature within Azure Active Directory. I have created a few Dynamic Groups, both for users but also for devices like “All Windows 10 Clients”, “All iPhones” and so on…"
 ---
 Really cool feature within Azure Active Directory. I have created a few Dynamic Groups, both for users but also for devices like “All Windows 10 Clients”, “All iPhones” and so on…
 

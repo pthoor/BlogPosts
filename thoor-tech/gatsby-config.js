@@ -11,8 +11,8 @@ module.exports = {
 			twitter: `https://twitter.com/PierreThoor`,
 			github: 'https://github.com/pthoor',
 			email: 'mailto:pierre@thoor.tech',
-      linkedin: `https://wwww.linkedin.com/in/PierreThoor`,
-      info: './about'
+      		linkedin: `https://wwww.linkedin.com/in/PierreThoor`,
+      		info: './about'
 		},
 	},
 	plugins: [
