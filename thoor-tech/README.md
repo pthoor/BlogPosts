@@ -5,7 +5,7 @@
 
 ## About me
 
-I'm a gloud geek trying to spread the word and inspire about the cloud. 
+I'm a cloud geek trying to spread the word and inspire about the cloud. 
 
 You may follow me on [twitter](https://twitter.com/PierreThoor) for latest updates.
 
@@ -13,4 +13,4 @@ You may follow me on [twitter](https://twitter.com/PierreThoor) for latest updat
 
 The source code is licensed under [MIT](./LICENSE-src). Please feel free to use and share it.
 
-All rights reserved for the [content](./LICENSE-content). Its alright to share snippets or part of the content with proper attribution. It’s not okay to copy paste an entire post (with or without attribution). Please [contact me](https://divyanshu013.dev) in this case.
+All rights reserved for the [content](./LICENSE-content). Its alright to share snippets or part of the content with proper attribution. It’s not okay to copy paste an entire post (with or without attribution). Please [contact me](https://thoor.tech) in this case.
