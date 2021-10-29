@@ -1,12 +1,13 @@
-# Div’s Blog
+# Thoor.tech
 
-[![Deploy Status](https://api.netlify.com/api/v1/badges/4020d01b-1c29-48f6-bbd2-a030292b406e/deploy-status)](https://app.netlify.com/sites/divyanshu-blog/deploys)
+![example workflow](https://github.com/pthoor/BlogPosts/actions/workflows/azure-static-web-apps-black-flower-0a4af0a03.yml/badge.svg)
+
 
 ## About me
 
-I’m a software engineer working mostly on frontend. I also create [programming videos](https://youtube.com/c/WhatTheJavaScript) with my friend. In my spare time I play music and DoTA.
+I'm a gloud geek trying to spread the word and inspire about the cloud. 
 
-You may follow me on [twitter](https://twitter.com/divyanshu013) for latest updates.
+You may follow me on [twitter](https://twitter.com/PierreThoor) for latest updates.
 
 ## Licenses
 
