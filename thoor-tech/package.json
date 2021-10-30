@@ -16,6 +16,7 @@
 		"@emotion/styled": "^11.3.0",
 		"@fontsource/cascadia-code": "^4.2.1",
 		"@fontsource/zilla-slab": "^4.5.0",
+		"@microsoft/applicationinsights-web": "^2.7.0",
 		"@react-icons/all-files": "^4.1.0",
 		"babel-plugin-styled-components": "^1.13.3",
 		"emotion-theming": "^11.0.0",

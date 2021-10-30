@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		bio: 'Blogging and talking MS Cloud',
+		bio: 'Blogging and talking about Microsoft Cloud',
 		title: `Thoor.tech`,
 		author: `Pierre Thoor`,
 		description: `Personal blog of Pierre Thoor`,
@@ -11,7 +11,7 @@ module.exports = {
 			twitter: `https://twitter.com/PierreThoor`,
 			github: 'https://github.com/pthoor',
 			email: 'mailto:pierre@thoor.tech',
-      		linkedin: `https://wwww.linkedin.com/in/PierreThoor`,
+      		linkedin: `https://www.linkedin.com/in/pierrethoor/`,
       		info: './about',
 			podcast: 'https://podcasts.apple.com/se/podcast/azure-ms-365-pt-session-podcast/id1527849931',
 			spotify: 'https://open.spotify.com/show/5E3fARGuhtcC3RYbarXalT'

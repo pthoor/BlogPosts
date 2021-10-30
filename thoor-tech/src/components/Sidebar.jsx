@@ -11,6 +11,7 @@ import Button from './Button';
 import { rhythm } from '../utils/typography';
 import { getTheme } from '../utils/theme';
 import ThemeContext from './ThemeContext';
+import { BREAK } from 'graphql-compose/lib/graphql';
 
 const SIDEBAR_QUERY = graphql`
 	{
@@ -105,17 +106,17 @@ const Sidebar = () => {
 						},
 					}}
 				/>
-				<h3>{author}</h3>
-				<h3><FiTerminal css={terminalStyles} /> </h3>
+				<h2>{author}</h2>
+				<h2><FiTerminal css={terminalStyles} /> </h2>
 			</div>
 			<p className="muted" css={{ color: muted }}>
-				{bio}
+				<h4>Product Manager writing <br/>and talking about <br/>Microsoft Cloud stuff</h4>
 			</p>
 			<div
 				css={{
 					display: 'grid',
 					gridGap: 10,
-					gridTemplateColumns: 'repeat(4, auto)',
+					gridTemplateColumns: 'repeat(3, auto)',
 					justifyItems: 'center',
 					justifyContent: 'start',
 				}}
@@ -170,7 +171,7 @@ const Sidebar = () => {
 					as="a"
 					circular
 					href={social.info}
-					target="_blank"
+					target="_self"
 					rel="noopener noreferrer"
 				>
 					<FaInfoCircle />
