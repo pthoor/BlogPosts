@@ -1,5 +1,7 @@
 ---
 title: 'About'
+customjs:
+    - "//cdn.credly.com/assets/utilities/embed.js"
 ---
 
 # Hello world
@@ -16,7 +18,18 @@ Besides my normal day job I'm trying to share my knowledge by speaking at podcas
 
 
 ## View my verified achievements at [Credly](https://www.credly.com/users/pierre-thoor/badges?sort=-state_updated_at&page=1)
-![](./Credly.png)
+
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="0c2ecbd8-1882-44e3-bcee-2ba305201b74" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="36449a26-52f9-47ab-81ca-3631289e887a" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="feba831d-0652-403d-a701-4b8e71c64bed" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="058e3152-f900-4dd1-9f66-07b69e1b43e8" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="deebc764-71ba-4fea-aa53-929e89bbd1b7" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="c0f20963-9648-4792-ba45-068320ca89fc" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="74bb82a5-37d6-498d-a23b-7721f6ed5bde" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="f1d74ba6-ac2a-455e-a0d7-fb0952fd06a5" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="920ff4a8-b79c-4cf6-8f94-2b63a5c528fc" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="37684a39-5a70-443e-af76-08287f3117e4" data-share-badge-host="https://www.credly.com"></div>
+<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 ## Azure & MS 365 PT-session podcast (swedish)
 Find the podcast at [Spotify](https://open.spotify.com/show/5E3fARGuhtcC3RYbarXalT)

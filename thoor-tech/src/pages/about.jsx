@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { object } from 'prop-types';
+import { Helmet } from 'react-helmet';
 
 import ThemeProvider from '../components/ThemeProvider';
 import Layout from '../components/Layout';
@@ -15,6 +16,20 @@ const AboutPage = ({ data, location }) => {
 				<Layout location={location} title={siteTitle}>
 					<Seo title="About" />
 					<div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+
+					<Helmet
+						htmlAttributes={{
+							
+						}}
+						
+					>
+						<script
+						type="text/javascript" 
+						async 
+						src="//cdn.credly.com/assets/utilities/embed.js"
+						/>
+					</Helmet>
+
 				</Layout>
 			</section>
 		</ThemeProvider>
