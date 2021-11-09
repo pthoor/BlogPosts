@@ -308,7 +308,7 @@ So the two first queries are already in our environment, and now we have two cho
 ## So the first alternative - import the JSON file.
 So within the Sentinel portal under Analytics you should see the **Import** button. When you click on that you will be promted to upload the .json file. For test purpose, here's one file you can test with and develop your own if you want to.
 
-[Analytic Rule - User accounts who are Owners of large numbers of Teams](content/blog/protect-teams-with-ms-sentinel-part3/Azure_Sentinel_analytic_rule.json)
+[Analytic Rule - User accounts who are Owners of large numbers of Teams](https://github.com/pthoor/MS_Sentinel/blob/main/Hunting/OfficeActivity/JSON/OwnerOfManyTeams.json)
 
 ![](./Import_AR.jpg)
 
@@ -331,14 +331,20 @@ Install-Module -Name AzSentinel
 Connect-AzAccount
 # Change subscription if necessary with Set-AzContext -Subscription "xxxx-xxxx-xxxx-xxxx"
 ```
-Save the example file that I have here:
-Then run this command
+Save the example YAML file that I have here: https://github.com/pthoor/MS_Sentinel/blob/main/Hunting/OfficeActivity/YAML/MultipleTeamsDeletes.yaml 
+
+I really think YAML is much easier to read, but I will add all of the examples above as both JSON and YAML so you can decide. Have a close look at my GitHub repo (under construction): https://github.com/pthoor/MS_Sentinel 
+
+And with the AzModule that can import both of the file types - you are covered!
+
+Then run this command:
 ``` powershell
 Import-AzSentinelAlertRule -SubscriptionId "your_subscription_id" -WorkspaceName "your_loganalytics_workspacename_connected_to_sentinel" -SettingsFile .\MultipleTeamsDeletes.yaml
 ```
 ![](./Import_AzAlertRule.jpg)
 
-Don't forget to enable the rules.
+Don't forget to enable the rules (or edit the file so it will be enabled directly).
+I see you at the next post!
 
 **Happy hunting!**
 🐱‍👤 🥷 🐱‍💻
