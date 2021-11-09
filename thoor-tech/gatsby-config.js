@@ -4,6 +4,7 @@ module.exports = {
 		title: `Thoor.tech`,
 		author: `Pierre Thoor`,
 		description: `Personal blog of Pierre Thoor`,
+		ogimage: 'content/assets/og-image.jpg',
 		domain: 'thoor.tech',
 		siteUrl: `https://thoor.tech`,
 		repo: 'pthoor/blog',

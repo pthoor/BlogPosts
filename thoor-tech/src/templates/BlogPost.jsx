@@ -16,6 +16,9 @@ const BlogPost = ({ data, pageContext, location }) => {
 	const post = data.markdownRemark;
 	const siteTitle = data.site.siteMetadata.title;
 	const { previous, next } = pageContext;
+	const { ogimage } = post.frontmatter;
+	const ogImagePath = ogimage && ogimage.childImageSharp
+
 
 	return (
 		<ThemeProvider>
@@ -26,9 +29,7 @@ const BlogPost = ({ data, pageContext, location }) => {
 							<Seo
 								title={post.frontmatter.title}
 								description={post.frontmatter.description || post.excerpt}
-								ogImage={data.site.siteMetadata.siteUrl.concat(
-									post.frontmatter.ogImage.childImageSharp.gatsbyImageData.images.fallback.src,
-								)}
+								ogImage={ogImagePath}
 							/>
 							<BlogInfo date={post.frontmatter.date} timeToRead={post.timeToRead} />
 							<h1
@@ -121,6 +122,7 @@ export const pageQuery = graphql`
 				title
 				date(formatString: "MMMM DD, YYYY")
 				description
+				author
 				ogImage {
 					childImageSharp {
 						gatsbyImageData(layout: FIXED, height: 630, width: 1200)
