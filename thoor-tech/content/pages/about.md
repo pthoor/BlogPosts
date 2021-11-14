@@ -19,6 +19,7 @@ Besides my normal day job I'm trying to share my knowledge by speaking at podcas
 
 ## View my verified achievements at [Credly](https://www.credly.com/users/pierre-thoor/badges?sort=-state_updated_at&page=1)
 
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="9ec8cebf-ee38-4983-b2f2-b127aa08497e" data-share-badge-host="https://www.credly.com"></div>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="0c2ecbd8-1882-44e3-bcee-2ba305201b74" data-share-badge-host="https://www.credly.com"></div>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="36449a26-52f9-47ab-81ca-3631289e887a" data-share-badge-host="https://www.credly.com"></div>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="feba831d-0652-403d-a701-4b8e71c64bed" data-share-badge-host="https://www.credly.com"></div>
@@ -29,6 +30,11 @@ Besides my normal day job I'm trying to share my knowledge by speaking at podcas
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="f1d74ba6-ac2a-455e-a0d7-fb0952fd06a5" data-share-badge-host="https://www.credly.com"></div>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="920ff4a8-b79c-4cf6-8f94-2b63a5c528fc" data-share-badge-host="https://www.credly.com"></div>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="37684a39-5a70-443e-af76-08287f3117e4" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="8e950427-7489-4266-a473-4864177f0ed0" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="9e361b27-d6f4-4498-bf5f-88c9e559da2c" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="d1a9a5ce-c826-4403-97df-7d91905c6588" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="0c5aa817-a8eb-40f3-80d7-5fe8354e6b48" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="3e6ee364-20ce-48d1-80ee-b64930dbaef6" data-share-badge-host="https://www.credly.com"></div>
 <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 ## Azure & MS 365 PT-session podcast (swedish)

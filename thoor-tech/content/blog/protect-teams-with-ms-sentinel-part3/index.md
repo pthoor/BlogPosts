@@ -5,6 +5,7 @@ ogImage: ./og-image.jpg
 description: ""
 ---
 In the two first posts in this series we went over how to enabled Office 365 Audit Logs, how we enabled the Office 365 data connector and Microsoft Sentinel, to the second post that showed us how to enable the new Teams solution within Content Hub (currently in preview).
+<meta name="image" property="og:image" content=".og-image.jpg">
 
 **Read the posts in the series:**</br>
 [Part 1 - Enable logging for Teams](https://thoor.tech/blog/protect-teams-with-az-sentinel/)</br>
