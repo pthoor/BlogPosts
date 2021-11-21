@@ -1,6 +1,6 @@
 ---
 title: Hunt for Guests inviting other guests with Microsoft Sentinel
-date: '2021-11-20T21:00:00+02:00'
+date: '2021-11-21T18:30:00+02:00'
 ogImage: ./Enable_AAD_DataConnector.jpg
 description: "Are we vulnerable by default? And can we hunt our guests? Warning - we cannot see all..."
 ---
