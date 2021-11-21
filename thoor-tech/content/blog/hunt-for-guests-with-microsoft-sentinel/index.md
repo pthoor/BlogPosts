@@ -1,10 +1,10 @@
 ---
 title: Hunt for Guests inviting other guests with Microsoft Sentinel
 date: '2021-11-20T21:00:00+02:00'
-ogImage: ./og-image.jpg
+ogImage: ./Enable_AAD_DataConnector.jpg
 description: "Are we vulnerable by default? And can we hunt our guests? Warning - we cannot see all..."
 ---
-<meta property='og:image' content='https://thoor.tech/static/184e90be146cb70c4cbad24a272d42cd/1c72d/Enable_AAD_DataConnector.jpg'/>
+<meta name="Enable_AAD_DataConnector" property="og:image" content="https://thoor.tech/static/184e90be146cb70c4cbad24a272d42cd/1c72d/Enable_AAD_DataConnector.jpg">
 
 **⚠️ Warning, we cannot see all...**</br>
 With default settings in Azure Active Directory we are, well, quite vulnerable... Many smaller companies just kicks off all the power of Office 365 and starts collaborating. Many settings are, open for the purpose of simplifing for our end users - but also an opener for bad actors.
