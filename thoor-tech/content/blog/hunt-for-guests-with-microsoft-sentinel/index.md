@@ -50,12 +50,20 @@ In Sentinel, go to Data Connectors, then find **Azure Active Directory** - open 
 Activate the log types you want to have.
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #ffffff; background-color: #674ea7; border-color: #674ea7;">
 <b>Info</b></br></br>
-<b>Sign-ins</b> – Information about sign-ins and how your resources are used by your users.</br>
-<b>Audit</b> – Information about changes applied to your tenant such as users and group management or updates applied to your tenant’s resources.</br>
-<b>Provisioning</b> – Activities performed by the provisioning service, such as the creation of a group in ServiceNow or a user imported from Workday.
+<b>Sign-in logs</b>, which contain information about interactive user sign-ins where a user provides an authentication factor. The Azure AD connector now includes the following three additional categories of sign-in logs, all currently in PREVIEW:</br></br>
+
+<b>Non-interactive user sign-in logs</b>, which contain information about sign-ins performed by a client on behalf of a user without any interaction or authentication factor from the user.
+
+<b>Service principal sign-in logs</b>, which contain information about sign-ins by apps and service principals that do not involve any user. In these sign-ins, the app or service provides a credential on its own behalf to authenticate or access resources.
+
+<b>Managed Identity sign-in logs</b>, which contain information about sign-ins by Azure resources that have secrets managed by Azure. For more information, see What are managed identities for Azure resources?
+
+<b>Audit logs</b>, which contain information about system activity relating to user and group management, managed applications, and directory activities.
+
+<b>Provisioning logs</b> (also in PREVIEW), which contain system activity information about users, groups, and roles provisioned by the Azure AD provisioning service.
 </div>
 
-https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-audit-logs 
+https://docs.microsoft.com/en-us/azure/sentinel/connect-azure-active-directory 
 
 
 ![](./Enable_AAD_DataConnector.jpg)
