@@ -21,6 +21,7 @@ Besides my normal day job I'm trying to share my knowledge by speaking at podcas
 
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #ffffff; background-color: #ffffff; border-color: #0e6cc1;">
 
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="ef3e30cb-5b02-469e-a576-6a8be4adeaf8" data-share-badge-host="https://www.credly.com"></div>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="9ec8cebf-ee38-4983-b2f2-b127aa08497e" data-share-badge-host="https://www.credly.com"></div>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="0c2ecbd8-1882-44e3-bcee-2ba305201b74" data-share-badge-host="https://www.credly.com"></div>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="36449a26-52f9-47ab-81ca-3631289e887a" data-share-badge-host="https://www.credly.com"></div>
@@ -39,6 +40,7 @@ Besides my normal day job I'm trying to share my knowledge by speaking at podcas
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="3e6ee364-20ce-48d1-80ee-b64930dbaef6" data-share-badge-host="https://www.credly.com"></div>
 <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </div>
+
 ## Azure & MS 365 PT-session podcast (swedish)
 Find the podcast at [Spotify](https://open.spotify.com/show/5E3fARGuhtcC3RYbarXalT)
 

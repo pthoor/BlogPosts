@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { FiTwitter, FiGithub, FiMail, FiTerminal } from 'react-icons/fi';
 //import { FaStackOverflow, FaGoodreadsG } from 'react-icons/fa';
@@ -106,11 +107,27 @@ const Sidebar = () => {
 						},
 					}}
 				/>
-				<h2>{author}</h2>
-				<h2><FiTerminal css={terminalStyles} /> </h2>
+				<h3
+				style={{
+					marginTop: 0,
+				}}
+			>
+				<Link
+					style={{
+						boxShadow: `none`,
+						textDecoration: `none`,
+						color: `inherit`,
+						display: 'inline-flex',
+						alignItems: 'flex-end',
+					}}
+					to="/"
+				>
+					<FiTerminal css={terminalStyles} /> Thoor.tech
+				</Link>
+			</h3>
 			</div>
 			<p className="muted" css={{ color: muted }}>
-				<h4>Product Manager writing <br/>and talking about <br/>Microsoft Cloud stuff</h4>
+				<h4>Pierre Thoor | <br/>Product Manager writing <br/>and talking about <br/>Microsoft Cloud stuff</h4>
 			</p>
 			<div
 				css={{
