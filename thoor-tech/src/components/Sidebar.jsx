@@ -146,8 +146,7 @@ const Sidebar = () => {
 						marginBottom: rhythm(0.8),
 						opacity: 0.87,
 						[mediaMax.small]: {
-							width: '64px !important',
-							height: '64px !important',
+							width: '100px !important',
 							order: 1,
 						},
 					}}
