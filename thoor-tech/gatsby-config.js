@@ -15,7 +15,9 @@ module.exports = {
       		linkedin: `https://www.linkedin.com/in/pierrethoor/`,
       		info: './about',
 			podcast: 'https://podcasts.apple.com/se/podcast/azure-ms-365-pt-session-podcast/id1527849931',
-			spotify: 'https://open.spotify.com/show/5E3fARGuhtcC3RYbarXalT'
+			spotify: 'https://open.spotify.com/show/5E3fARGuhtcC3RYbarXalT',
+			microsoft: 'https://mvp.microsoft.com/en-us/PublicProfile/5004683?fullName=Pierre%20Thoor',
+			credly: 'https://www.credly.com/users/pierre-thoor/badges?sort=-state_updated_at&page=1'
 		},
 	},
 	plugins: [

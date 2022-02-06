@@ -3,6 +3,8 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { FiTwitter, FiGithub, FiMail, FiTerminal } from 'react-icons/fi';
+import { FaMicrosoft } from 'react-icons/fa';
+import { GiAchievement } from 'react-icons/gi';
 //import { FaStackOverflow, FaGoodreadsG } from 'react-icons/fa';
 import { FaLinkedinIn, FaInfoCircle, FaPodcast, FaSpotify } from 'react-icons/fa';
 import { mediaMax } from '@divyanshu013/media';
@@ -21,6 +23,11 @@ const SIDEBAR_QUERY = graphql`
 				gatsbyImageData(layout: FIXED, width: 128, height: 128)
 			}
 		}
+		mvp: file(absolutePath: { regex: "/MVP_Badge_H.jpg/" }) {
+			childImageSharp {
+				gatsbyImageData(layout: CONSTRAINED, width: 100)
+			}
+		}
 		site {
 			siteMetadata {
 				author
@@ -34,6 +41,8 @@ const SIDEBAR_QUERY = graphql`
 					info
 					podcast
 					spotify
+					microsoft
+					credly
 				}
 			}
 		}
@@ -43,6 +52,7 @@ const SIDEBAR_QUERY = graphql`
 const Sidebar = () => {
 	const data = useStaticQuery(SIDEBAR_QUERY);
 	const { avatar } = data;
+	const { mvp } = data;
 	const { author, bio, social } = data.site.siteMetadata;
 	const siteTitle = data.site.siteMetadata.title;
 	const { theme } = useContext(ThemeContext);
@@ -127,7 +137,21 @@ const Sidebar = () => {
 			</h3>
 			</div>
 			<p className="muted" css={{ color: muted }}>
-				<h4>Pierre Thoor | <br/>Product Manager writing <br/>and talking about <br/>Microsoft Cloud stuff</h4>
+				<h4>Pierre Thoor <br/>Product Manager writing <br/>and talking about <br/>Microsoft Cloud stuff</h4>
+				<GatsbyImage
+					alt={author}
+					image={mvp.childImageSharp.gatsbyImageData}
+					imgStyle={{ borderRadius: '0%' }}
+					css={{
+						marginBottom: rhythm(0.8),
+						opacity: 0.87,
+						[mediaMax.small]: {
+							width: '64px !important',
+							height: '64px !important',
+							order: 1,
+						},
+					}}
+				/>
 			</p>
 			<div
 				css={{
@@ -214,6 +238,28 @@ const Sidebar = () => {
 					rel="noopener noreferrer"
 				>
 					<FaSpotify />
+				</Button>
+				<Button
+					title="Microsoft MVP"
+					aria-label="Microsoft MVP"
+					as="a"
+					circular
+					href={social.microsoft}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<FaMicrosoft />
+				</Button>
+				<Button
+					title="Credly"
+					aria-label="Credly"
+					as="a"
+					circular
+					href={social.credly}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<GiAchievement />
 				</Button>
 			</div>
 		</nav>

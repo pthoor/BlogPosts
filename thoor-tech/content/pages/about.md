@@ -11,6 +11,13 @@ customjs:
 I'm working as a Global Product Manager, Microsoft Cloud Solutions at Telia Company, living in Sweden, and are in the intersection between business and technology. In my role at Telia Company I'm responsible for scaling and expanding the Azure business area and build up the competence, processes, WoW, and also driving community efforts around Azure and Microsoft 365.
 
 Besides my normal day job I'm trying to share my knowledge by speaking at podcasts, conferences and events.
+
+[**Microsoft MVP Awards 2022**](https://mvp.microsoft.com/en-us/PublicProfile/5004683?fullName=Pierre%20Thoor)
+
+![](./MVP_Badge_h.jpg "Microsoft MVP")
+
+* [Azure User Group Helsingborg - Meetup](https://www.meetup.com/azure-user-group-helsingborg/)
+* [Azure User Group Helsingborg - Homepage](https://azureusergrouphbg.se/)
 * [Teamsdagen](https://www.teamsdagen.se)
 * [AVD Tech Fest](https://www.wvdtechfest.com)
 * Local User Groups in Sweden
@@ -41,7 +48,11 @@ Besides my normal day job I'm trying to share my knowledge by speaking at podcas
 <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </div>
 
-## Azure & MS 365 PT-session podcast (swedish)
+## SÄKERT podcast (Swedish)
+Find the podcast at [Spotify](https://open.spotify.com/show/7yfzP66XlZPwOS4FGbhM9T?si=2e4b75616b13490a)
+[![SÄKERT](./Sakert_Promo.png "SÄKERT")](https://open.spotify.com/show/7yfzP66XlZPwOS4FGbhM9T?si=2e4b75616b13490a)
+
+## Azure & MS 365 PT-session podcast (Swedish)
 Find the podcast at [Spotify](https://open.spotify.com/show/5E3fARGuhtcC3RYbarXalT)
 
 [![Azure & MS 365 PT-session podcast](./Azure_MS365_podcast.png "Azure & MS 365 PT-session podcast")](https://open.spotify.com/show/5E3fARGuhtcC3RYbarXalT)
