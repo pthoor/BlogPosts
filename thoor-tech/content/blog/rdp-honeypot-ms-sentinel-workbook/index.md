@@ -36,7 +36,7 @@ You will then have two alternatives (maybe more, let me know) to gather the info
 I haven't taken the cost in to account for these two alternatives but feel that alternative 1 is more for testing and alternative 2 for production.
 
 * Alternative 1: Use PowerShell script and Log Analytics Custom Log with Custom Tables
-* Alternative 2: Use Azure Monitor, Log Analytics Agent, Change? to send data directly to Log Analytics
+* Alternative 2: Defender for Servers to send data directly to Log Analytics
 
 ## Alternative 1
 
@@ -243,15 +243,7 @@ Now let's see all the events coming in...
 
 ## Alternative 2
 
-This is the alternativ if you don't want to create your own custom log with custom fields but instead using the built-in solution with Azure Monitor Agent and Defender for Cloud.
-
-Install all agents...
-- Defender for Cloud
-- Azure Monitor
-
-From the Azure Monitor for VMs and the VMConnection table we can do the same. 
-
-https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/VMConnection 
+This is the alternativ if you don't want to create your own custom log with custom fields but instead using the built-in solution with **Defender for Cloud** and **Defender for Servers**.
 
 Enable **Defender for Servers Plan 2** inside Defender for Cloud menu.
 
@@ -260,6 +252,10 @@ Enable **Defender for Servers Plan 2** inside Defender for Cloud menu.
 Then select **Auto Provisoning** menu, make sure to enable Log Analytics agent for VMs.
 Choose the workspace setting that fits you. Make also sure to select the level of **Windows Security Events**, for this I have choosen **All events**. Don't forget to save.
 ![](./autoprovision.jpg)
+
+
+From the Azure Monitor for VMs and the **VMConnection** table we can do the same.
+https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/VMConnection 
 
 We can after some time look at the SecurityEvent table and the EventID 4625:
 https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4625 
@@ -287,7 +283,7 @@ To find botnets you can use this KQL:
 ```
 
 # Building the Workbook
-Take the code below to build the workbook I have created and adjust it to your needs.
+Take the code below to build the workbook I have created and adjust it to your needs. I have for this used alternative 1 to build the workbook.
 * Make sure to change resourceGroupName
 * Change Custom Table name and/or Custom Field Name (_CF) if you have named it other than this example
 
