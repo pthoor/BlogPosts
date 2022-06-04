@@ -1,7 +1,7 @@
 ---
 title: Add Twitter Threat Intelligence to Microsoft Sentinel
 date: '2022-06-04T21:00:00+02:00'
-ogImage: ./assets/og-image.jpg
+ogImage: ./og-image.jpg
 description: "In this post we will dig down into the twitter.threatintel.rocks site and how we can use that as an TI feed to Microsoft Sentinel with PowerShell and Azure Automation Account"
 ---
 Have had some fun with Microsoft Sentinel Threat Intelligence lately and when I saw a tweet from [Stefan Grimminck](https://twitter.com/StefanGrimminck) about the tool he made to retrieve tweets, parses them and extract the malicious URLs and IPs, I had to start doing some PowerShell magic. Yes, of course you can use Python but I'm not there, yet.
