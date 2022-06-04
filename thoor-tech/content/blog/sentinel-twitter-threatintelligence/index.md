@@ -45,6 +45,31 @@ You can try this script locally (works fine with PS 7) or via Azure Automation A
 ![](./aa-addindicator.jpg)
 ![](./aa-addindicator_new.jpg)
 
+To use Azure Automation Account, use Managed Identity and then use below script to add the MSI account to use the ThreatIndicators.ReadWrite.OwnedBy API permissions.
+
+```powershell
+# Your tenant id (in Azure Portal, under Azure Active Directory -> Overview )
+$TenantID="xxxxxxxxxxx"
+# Microsoft Graph App ID (DON'T CHANGE)
+$GraphAppId = "00000003-0000-0000-c000-000000000000"
+# Name of the manage identity, same as the Automation Account name
+$DisplayNameOfMSI="aa-twtr-ti-sentinel" 
+# Check the Microsoft Graph documentation for the permission you need for the operation
+$PermissionName = "ThreatIndicators.ReadWrite.OwnedBy" 
+
+# Install the module (You need admin on the machine)
+# Install-Module AzureAD 
+
+Connect-AzureAD -TenantId $TenantID 
+$MSI = (Get-AzureADServicePrincipal -Filter "displayName eq '$DisplayNameOfMSI'")
+Start-Sleep -Seconds 10
+$GraphServicePrincipal = Get-AzureADServicePrincipal -Filter "appId eq '$GraphAppId'"
+$AppRole = $GraphServicePrincipal.AppRoles | `
+Where-Object {$_.Value -eq $PermissionName -and $_.AllowedMemberTypes -contains "Application"}
+New-AzureAdServiceAppRoleAssignment -ObjectId $MSI.ObjectId -PrincipalId $MSI.ObjectId `
+-ResourceId $GraphServicePrincipal.ObjectId -Id $AppRole.Id
+```
+
 **Script on Github: https://github.com/pthoor/MS_Sentinel/blob/main/Add-TwitterTIIndicators.ps1**
 
 ## Add-TwitterTIIndicators.ps1
