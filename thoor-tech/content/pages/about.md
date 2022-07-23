@@ -8,7 +8,9 @@ customjs:
 
 > Welcome to my home on the Internet!
 
-I'm working as a Global Product Manager, Microsoft Cloud Solutions at Telia Company, living in Sweden, and are in the intersection between business and technology. In my role at Telia Company I'm responsible for scaling and expanding the Azure business area and build up the competence, processes, WoW, and also driving community efforts around Azure and Microsoft 365.
+I'm working as a Global Common Product Manager, Microsoft Cloud at [Telia Company](https://www.teliacompany.com/en/) and living in Sweden. 
+
+As a Common Product Manager (CPM) I would be end-to-end accountable for the Microsoft Cloud product at Telia Company and act as a virtual leader in the matrix, where my responsibility is to drive product vision, strategy, development, harmonization, and consolidation across markets and segments throughout the entire product lifecycle. I'm also driving community efforts around Azure and Microsoft 365.
 
 Besides my normal day job I'm trying to share my knowledge by speaking at podcasts, conferences and events.
 
