@@ -30,6 +30,17 @@ Besides my normal day job I'm trying to share my knowledge by speaking at podcas
 
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #ffffff; background-color: #ffffff; border-color: #0e6cc1;">
 
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="8b5712d1-b1a8-481f-8118-345e591e4150" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="903a6e57-8c63-46b5-a721-33155619da23" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="b127b43b-ea3e-4ca3-9f7f-00fa50fed9ad" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="7e272844-51d8-470f-9571-668dd9c5c5bc" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="7a65e1c2-edbc-4d85-bd0c-4763a7713b63" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="28b47cc0-a5be-41c3-95a3-1237917fc633" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="97ae9753-b447-47b1-9bb7-57efdda4a245" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="9816a9d3-6c2e-41d5-926a-fbfa1c63e9c5" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="44cd1f5a-9bc8-4c68-abdd-84176121606b" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="21e56301-44f5-4d51-8020-21c6c94ae16d" data-share-badge-host="https://www.credly.com"></div>
+<div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="b6a33f35-efd5-4001-84fc-27f8aaba08ff" data-share-badge-host="https://www.credly.com"></div>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="ef3e30cb-5b02-469e-a576-6a8be4adeaf8" data-share-badge-host="https://www.credly.com"></div>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="9ec8cebf-ee38-4983-b2f2-b127aa08497e" data-share-badge-host="https://www.credly.com"></div>
 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="0c2ecbd8-1882-44e3-bcee-2ba305201b74" data-share-badge-host="https://www.credly.com"></div>
