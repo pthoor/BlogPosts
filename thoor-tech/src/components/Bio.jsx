@@ -69,7 +69,7 @@ const Bio = () => {
 			<div css={{ fontSize: 16, color: secondary }}>
 				<p>
 					Personal blog of <a href={social.twitter}>{author}</a>. I work as a{' '}
-					Product Manager, Microsoft Cloud Solutions at Telia Company.
+					Common Product Manager, Microsoft Cloud at Telia Company.
 				</p>
 				<p>
 					You may follow me on <a href={social.twitter}>Twitter</a> {' '}
