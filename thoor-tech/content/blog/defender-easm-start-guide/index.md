@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender External Attack Surface Management (EASM)
 date: '2022-08-04T18:30:00+02:00'
-ogImage: /EASM.svg
+ogImage: ../../assets/og-image.jpg
 description: "In this post we will look into getting started with Microsoft Defender External Attack Surface Management (EASM)"
 ---
 
